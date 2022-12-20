@@ -1,0 +1,14 @@
+.list-item {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.appointment-title {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+
+.appointment-date {
+  color: #b5b7c4;
+}

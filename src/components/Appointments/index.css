@@ -1,0 +1,71 @@
+.app-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+}
+
+.main-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.top-container {
+  display: flex;
+}
+
+.main-heading {
+  font-size: 26px;
+  font-family: 'Roboto';
+  color: #171f46;
+}
+
+.app-logo {
+  height: 200px;
+  width: 360px;
+  margin-left: 30px;
+}
+
+.input-title {
+  color: #b5b7c4;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.input-box {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 60px;
+  margin-top: 10px;
+}
+
+.appointment-title-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointments-title {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #171f46;
+}
+
+.starred-btn {
+  border-radius: 20px;
+  color: #9897f0;
+  border-color: #9897f0;
+  background: transparent;
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+}
