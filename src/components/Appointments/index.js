@@ -9,7 +9,6 @@ class Appointments extends Component {
     appointmentsList: [],
     title: '',
     date: '',
-    isStarred: false,
   }
 
   onTitleChange = event => {
@@ -17,7 +16,7 @@ class Appointments extends Component {
   }
 
   onDateChange = event => {
-    this.setState({title: event.target.value})
+    this.setState({date: event.target.value})
   }
 
   onAdd = event => {
@@ -26,7 +25,7 @@ class Appointments extends Component {
     const {title, date} = this.state
 
     const newAppointment = {
-      id: uuidv4,
+      id: uuidv4(),
       title,
       date,
       isStarred: false,
@@ -50,7 +49,7 @@ class Appointments extends Component {
               <h1 className="main-heading">Add Appointment</h1>
 
               <form className="form-container" onSubmit={this.onAdd}>
-                <p className="input-title">TITLE</p>
+                <p className="title-input">TITLE</p>
                 <input
                   value={title}
                   className="input-box"
@@ -65,7 +64,7 @@ class Appointments extends Component {
                   onChange={this.onDateChange}
                 />
                 <br />
-                <button className="add-btn" type="button">
+                <button className="add-btn" type="submit">
                   Add
                 </button>
               </form>
