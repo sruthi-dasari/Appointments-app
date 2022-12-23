@@ -1,6 +1,14 @@
-.list-item {
+.list-item-container {
   border-radius: 5px;
   padding: 10px;
+  border-style: solid;
+  color: #b5b7c4;
+  border-width: 1px;
+  list-style-type: none;
+}
+
+.list-upper-container {
+  display: flex;
 }
 
 .appointment-title {
