@@ -27,7 +27,7 @@
   margin-left: 30px;
 }
 
-.input-title {
+.title-input {
   color: #b5b7c4;
   font-family: 'Roboto';
   font-size: 14px;
@@ -36,6 +36,7 @@
 .input-box {
   padding: 10px;
   border-radius: 5px;
+  width: 160px;
 }
 
 .add-btn {
