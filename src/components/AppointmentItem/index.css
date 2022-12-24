@@ -1,22 +1,49 @@
 .list-item-container {
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
+  border-radius: 5px;
   border-style: solid;
   color: #b5b7c4;
   border-width: 1px;
   list-style-type: none;
+  height: 40px;
+  width: 140px;
+  margin-left: 0px;
+  margin-bottom: 5px;
 }
 
 .list-upper-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
 }
 
 .appointment-title {
   color: #171f46;
   font-family: 'Roboto';
-  font-size: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 1px;
 }
 
 .appointment-date {
   color: #b5b7c4;
+  font-family: 'Roboto';
+  font-size: 9px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.star-btn {
+  border: none;
+  background: transparent;
+}
+
+.star-icon {
+  height: 12px;
+  width: 12px;
 }
