@@ -11,6 +11,17 @@ class Appointments extends Component {
     date: '',
   }
 
+  toggleIsStarred = id => {
+    this.setState(prevState => ({
+      appointmentsList: prevState.appointmentsList.map(eachAppointment => {
+        if (id === eachAppointment.id) {
+          return {...eachAppointment, isStarred: !eachAppointment.isStarred}
+        }
+        return eachAppointment
+      }),
+    }))
+  }
+
   onTitleChange = event => {
     this.setState({title: event.target.value})
   }
@@ -56,7 +67,7 @@ class Appointments extends Component {
                   placeholder="Title"
                   onChange={this.onTitleChange}
                 />
-                <p className="input-title">DATE</p>
+                <p className="title-input">DATE</p>
                 <input
                   value={date}
                   type="date"
@@ -89,6 +100,7 @@ class Appointments extends Component {
               {appointmentsList.map(eachAppointment => (
                 <AppointmentItem
                   appointmentDetails={eachAppointment}
+                  toggleIsStarred={this.toggleIsStarred}
                   key={eachAppointment.id}
                 />
               ))}
