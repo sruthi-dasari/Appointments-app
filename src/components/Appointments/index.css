@@ -2,12 +2,13 @@
   background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
   height: 100vh;
   display: flex;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-card {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
 }
 
@@ -16,27 +17,28 @@
 }
 
 .main-heading {
-  font-size: 26px;
+  font-size: 14px;
   font-family: 'Roboto';
   color: #171f46;
 }
 
 .app-logo {
-  height: 200px;
-  width: 360px;
+  height: 100px;
+  width: 160px;
   margin-left: 30px;
 }
 
 .title-input {
   color: #b5b7c4;
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 8px;
 }
 
 .input-box {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  width: 160px;
+  width: 100px;
+  font-size: 8px;
 }
 
 .add-btn {
@@ -45,9 +47,14 @@
   font-family: 'Roboto';
   border: none;
   border-radius: 5px;
-  padding: 5px;
-  width: 60px;
+  padding: 4px;
+  width: 30px;
   margin-top: 10px;
+  font-size: 7px;
+}
+
+.bottom-container {
+  padding-left: 0px;
 }
 
 .appointment-title-btn-container {
@@ -56,17 +63,30 @@
 }
 
 .appointments-title {
-  font-size: 20px;
+  font-size: 13px;
   font-family: 'Roboto';
   color: #171f46;
 }
 
 .starred-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
+  border-width: 1px;
   color: #9897f0;
   border-color: #9897f0;
   background: transparent;
-  width: 70px;
-  height: 30px;
-  padding: 5px;
+  width: 30px;
+  height: 10px;
+  padding: 6px;
+  font-size: 6px;
+}
+
+.list-container {
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 350px;
 }
